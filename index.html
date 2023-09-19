@@ -15,10 +15,25 @@
   <body>
     <div class="container">
       <div class="overview-box">
+        <form id="search-form" class="mb-4">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city name ..."
+                class="form-control"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
         <div class="basics">
           <h1 id="city">Berlin</h1>
           <ul>
-            <li><span id="date">Monday, 18.09.2023 </span></li>
+            <li>Last updated: <span id="date">Monday, 18.09.2023 </span></li>
             <li id="description">Cloudy</li>
           </ul>
         </div>
@@ -39,9 +54,9 @@
           </div>
           <div class="col-6">
             <ul>
-              <li><span id="precipitation">Precipitation: 24%</span></li>
-              <li><span id="humidity">Humidity: 60%</span></li>
-              <li><span id="wind">Wind: 23km/h</span></li>
+              <li>Precipitation: <span id="precipitation">x</span>%</li>
+              <li>Humidity: <span id="humidity">x</span>%</li>
+              <li>Wind: <span id="wind">x</span>km/h</li>
             </ul>
           </div>
         </div>
