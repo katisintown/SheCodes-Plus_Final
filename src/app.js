@@ -38,11 +38,17 @@ function displayTemperature(response) {
   precipitationElement.innerHTML = response.data.precipitation;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+  let iconCode = response.data.weather[0].icon;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${iconCode}10d@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-
 let apiKey = "3490c484b22f8e3e1ecd37a8cafd1986";
-let apiURLWeather = `https://api.openweathermap.org/data/2.5/weather?q=Berlin
+let city = "Berlin";
+let apiURLWeather = `https://api.openweathermap.org/data/2.5/weather?q=${city}
 &appid=${apiKey}&units=metric`;
 let apiURLGeocode = `http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={5}&appid=${apiKey}`;
-
 axios.get(apiURLWeather).then(displayTemperature);
