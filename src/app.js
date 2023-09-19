@@ -41,7 +41,8 @@ function displayTemperature(response) {
 }
 
 let apiKey = "3490c484b22f8e3e1ecd37a8cafd1986";
-let apiURLWeather = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=${apiKey}`;
+let apiURLWeather = `https://api.openweathermap.org/data/2.5/weather?q=Berlin
+&appid=${apiKey}&units=metric`;
 let apiURLGeocode = `http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={5}&appid=${apiKey}`;
 
 axios.get(apiURLWeather).then(displayTemperature);
