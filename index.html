@@ -23,6 +23,7 @@
                 placeholder="Type a city name ..."
                 class="form-control"
                 id="city-input"
+                autocomplete="off"
               />
             </div>
             <div class="col-3">
@@ -48,13 +49,15 @@
               />
               <div class="float-left">
                 <strong id="temperature-current"> 12 </strong>
-                <span class="units">°C | <a href="#">°F</a></span>
+                <span class="units"></span>
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Precipitation: <span id="precipitation">x</span>%</li>
               <li>Humidity: <span id="humidity">x</span>%</li>
               <li>Wind: <span id="wind">x</span>km/h</li>
             </ul>
