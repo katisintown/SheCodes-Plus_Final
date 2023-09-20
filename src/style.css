@@ -37,7 +37,6 @@ ul {
   border: 1px solid #dadde1;
   border-radius: 10px;
   margin: 30px auto;
-  max-width: 700px;
   padding: 15px;
 }
 
@@ -54,13 +53,13 @@ ul {
   height: 70px;
   width: 70px;
   display: inline;
+  margin-right: 10px;
 }
 .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
-  display: inline;
 }
 
 .weather-temperature .units {
