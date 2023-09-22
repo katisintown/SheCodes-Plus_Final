@@ -39,6 +39,13 @@ ul {
   opacity: 0.4;
   margin-left: 10px;
 }
+
+.forecast-box:hover {
+  background-color: rgb(241, 234, 225);
+  border: 1 px solid #dadde1;
+  border-radius: 10px;
+  padding: 2px;
+}
 .overview-box {
   border: 1px solid #dadde1;
   border-radius: 10px;
@@ -68,16 +75,6 @@ ul {
   display: block;
   margin-left: 25px;
   margin-top: 0;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 .weather-temperature img {
   height: 70px;
