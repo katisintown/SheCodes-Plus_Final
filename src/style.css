@@ -32,12 +32,19 @@ ul {
 .container {
   max-width: 700px;
   margin: 15px auto;
+  margin-bottom: 20px;
+}
+
+.credit {
+  opacity: 0.4;
+  margin-left: 10px;
 }
 .overview-box {
   border: 1px solid #dadde1;
   border-radius: 10px;
   margin: 30px auto;
   padding: 15px;
+  margin-bottom: 5px;
 }
 
 .weather-forecast {
