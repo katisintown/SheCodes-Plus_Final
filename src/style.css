@@ -23,12 +23,14 @@ li {
   text-transform: capitalize;
 }
 ul {
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 .basics {
   margin-bottom: 20px;
+  margin-left: 18px;
 }
+
 .container {
   max-width: 700px;
   margin: 15px auto;
@@ -40,13 +42,18 @@ ul {
   margin-left: 10px;
 }
 
+.forecast-box {
+  margin-left: 18px;
+}
+
 .forecast-box:hover {
-  background-color: rgb(241, 234, 225);
+  background-color: rgb(255, 255, 255);
   border: 1 px solid #dadde1;
   border-radius: 10px;
   padding: 2px;
 }
 .overview-box {
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   border: 1px solid #dadde1;
   border-radius: 10px;
   margin: 30px auto;
