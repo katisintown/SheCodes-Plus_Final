@@ -40,6 +40,29 @@ ul {
   padding: 15px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-min-temp {
+  opacity: 0.5;
+}
+.weather-forecast img {
+  display: block;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
